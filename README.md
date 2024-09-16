@@ -1,4 +1,4 @@
-# StockNet: Predicting Google Stock Prices Using Recurrent Neural Networks
+# ChronoTrader: Predicting Google Stock Prices Using Recurrent Neural Networks
 
 This project demonstrates the application of a Recurrent Neural Network (RNN) to predict Google's stock prices in 2017 based on previous stock data. The model leverages Long Short-Term Memory (LSTM) layers to capture time dependencies within stock price data and produce a prediction.
 
