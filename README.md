@@ -31,7 +31,7 @@ After training the RNN for 100 epochs with a batch size of 32, the following res
 - The model was able to capture the general trend of stock price movements.
 - Below is a visualization of the real stock price vs. the predicted stock price:
 
-![Stock Price Prediction](./results/stock_price_prediction_graph.png)
+![Stock Price Prediction](./results/predicted stock price vs. actual stock price.png)
 
 ## Future Improvements
 
