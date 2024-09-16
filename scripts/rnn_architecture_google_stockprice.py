@@ -22,9 +22,13 @@ import pandas as pd
 from google.colab import drive
 drive.mount('/content/drive')
 
+1. Make sure you have the dataset files (`Google_Stock_Price_Train.csv`) uploaded to a folder named `MyDataset` in your Google Drive.
+2. Run the notebook in Google Colab.
+3. The script will mount your Google Drive and access the dataset from `/MyDrive/MyDataset/`.
+
 """##File Access"""
 
-file_path = '/content/drive/My Drive/AI projects/Recurrent Neural Networks Project/Google_Stock_Price_Train.csv'
+file_path = '/content/drive/MyDrive/MyDataset/Google_Stock_Price_Train.csv'
 dataset_train = pd.read_csv(file_path)
 training_set = dataset_train.iloc[:, 1:2].values
 
