@@ -43,8 +43,6 @@ Several enhancements can be made to improve the model's performance:
 
 ## Dataset
 
-The dataset used for training and testing the RNN can be found on Kaggle: [Google Stock Price Dataset](https://www.kaggle.com/muhammadqasim/google-stock-price-data).
-
 import pandas as pd
 
 # Load the training and testing data from the local 'data/' folder
