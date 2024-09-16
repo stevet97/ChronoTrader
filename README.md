@@ -45,10 +45,41 @@ Several enhancements can be made to improve the model's performance:
 
 The dataset used for training and testing the RNN can be found on Kaggle: [Google Stock Price Dataset](https://www.kaggle.com/muhammadqasim/google-stock-price-data).
 
-To download the dataset programmatically, use the following code snippet:
-```python
-!pip install kaggle
-from kaggle.api.kaggle_api_extended import KaggleApi
-api = KaggleApi()
-api.authenticate()
-api.dataset_download_files('your-username/google-stock-price-dataset', path='data/', unzip=True)
+import pandas as pd
+
+# Load the training and testing data from the local 'data/' folder
+train_file_path = 'data/Google_Stock_Price_Train.csv'
+test_file_path = 'data/Google_Stock_Price_Test.csv'
+
+# Read the training data
+dataset_train = pd.read_csv(train_file_path)
+training_set = dataset_train.iloc[:, 1:2].values  # Assuming 'Open' is the second column
+
+# Read the testing data
+dataset_test = pd.read_csv(test_file_path)
+test_set = dataset_test.iloc[:, 1:2].values  # Assuming 'Open' is the second column
+
+# License
+
+MIT License
+
+Copyright (c) [Year] [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
